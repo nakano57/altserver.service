@@ -9,6 +9,8 @@ WantedBy = multi-user.target
 
 [Service]
 Environment=ALTSERVER_ANISETTE_SERVER=http://100.82.213.22:6969
-Environment=USBMUXD_SOCKET_ADDRESS=100.98.16.58:27015
+Environment=USBMUXD_SOCKET_ADDRESS=0.0.0.0:27015
 ExecStart = /home/pi/AltServer-aarch64
 Restart=always
+User=pi
+Group=pi
